@@ -7,6 +7,8 @@ import join from '../contants/join.svg'
 import { useNavigate } from 'react-router-dom'
 import { useContext, useState } from 'react'
 import TaskContext from '../Context/Taskcontext'
+import Loginrr from './Loginrr'
+
 
 const Login = () => {
   const{n,sn}=useContext(TaskContext);
@@ -30,7 +32,7 @@ const Login = () => {
         <div>
           <img src={note} alt="pen" className='ml-[200px] mt-40'/>
         </div>
-        <button className='mx-[210px] my-20 h-[50px] w-[330px] bg-[#F7685C] rounded-lg text-white font-semibold text-[20px] flex items-center 
+        <button onClick={(e)=>navigate("/Loginrr")} className='mx-[210px] my-20 h-[50px] w-[330px] bg-[#F7685C] rounded-lg text-white font-semibold text-[20px] flex items-center 
               justify-center'><img src={icon} alt="icon" />
           <span className='ml-2'>Join with Google</span>
         </button>

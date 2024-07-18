@@ -6,7 +6,9 @@ import Login from './Component/login.js';
 import Task from './Component/Task.js';
 import Note from './Component/Note.js';
 import Card from './Component/Cards.js';
-// import Note from './Component/Note.js';
+import SignUp from './Component/SignUp.js';
+import Loginrr from './Component/Loginrr.js';
+
 const router = createBrowserRouter([
   {
     path:'/',
@@ -20,6 +22,15 @@ const router = createBrowserRouter([
   {
     path:'/note',
     element:<Note/>,
+  },
+  
+  {
+    path:'/Loginrr',
+    element:<Loginrr/>,
+  },
+  {
+    path:'/SignUp',
+    element:<SignUp/>,
   },
   
 ]);
